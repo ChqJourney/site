@@ -1,3 +1,9 @@
+<script>
+	let sec=60;
+	setInterval(()=>{
+		sec--
+	},1000)
+</script>
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
@@ -5,7 +11,9 @@
 
 <div class="text-column">
 	<h1>About this app</h1>
-
+	<span class="countdown font-mono text-6xl">
+		<span style="--value:{sec};"></span>
+	  </span>
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
 		following into your command line and following the prompts:

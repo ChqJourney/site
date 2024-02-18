@@ -1,6 +1,8 @@
 <script>
 	import Counter from './Counter.svelte';
+	// @ts-ignore
 	import welcome from '$lib/images/svelte-welcome.webp';
+	// @ts-ignore
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 

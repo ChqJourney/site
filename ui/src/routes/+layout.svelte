@@ -1,17 +1,18 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+	import "../app.pcss";
+    import Header from './Header.svelte';
+    import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
+	<Header></Header>
 
 	<main>
-		<slot />
+		<slot></slot>
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>visit <a href="https://photonee.com">photonee.com</a> to learn more about photonee</p>
 	</footer>
 </div>
 
