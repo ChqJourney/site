@@ -1,4 +1,4 @@
-const daisyui = require("daisyui");
+
 const typography = require("@tailwindcss/typography");
 const forms = require("@tailwindcss/forms");
 
