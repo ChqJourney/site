@@ -12,8 +12,28 @@
           {msg.name}
           <time class="text-xs opacity-50">{msg.time}</time>
       </div>
-      <div class="chat-bubble hover:scale-105 hover:bg-slate-700">{msg.text}</div>
+      <div class={`${msg.direction==="in"?"chat-bubble-in":"chat-bubble-out"} hover:scale-105 hover:bg-slate-700`}>{msg.text}</div>
       <div class="chat-footer opacity-50">
           Delivered
       </div>
   </div>
+  <style>
+    .chat-bubble-in{
+        border-radius: 1rem;
+        background-color: gray;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color:white;
+    }
+    .chat-bubble-out{
+        border-radius: 1rem;
+        background-color: rgb(109, 156, 209);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color:white;
+    }
+  </style>

@@ -24,8 +24,8 @@
     <div
         class={`flex-start  w-1 h-full ${selected ? "bg-pink-500" : ""}`}
     ></div>
-    <div class="flex border-b ml-1 w-full border-slate-400 h-full items-center">
-        <div class="avatar ml-1 hover:scale-105">
+    <div class="flex border-b w-full border-slate-400 h-full items-center">
+        <div class="avatar hover:scale-105">
             <div class="w-8 rounded-full">
                 <img
                     alt="Tailwind CSS chat bubble component"
@@ -34,12 +34,12 @@
             </div>
         </div>
 
-        <div class="w-full grow flex flex-col hover:scale-105">
+        <div class="w-full grow ml-2 flex flex-col hover:scale-105">
             <div class="flex justify-between">
                 <div class="font-semibold">{chatInfo.persons}</div>
                 <div class="text-gray-600 text-xs">12:30 AM</div>
             </div>
-            <div class="text-start text-xs max-w-36 overflow-hidden truncate text-gray-600">
+            <div class="text-start text-xs max-w-36 opacity-50 overflow-hidden truncate text-gray-600">
                 {chatInfo.chatBriefing}
             </div>
         </div>
