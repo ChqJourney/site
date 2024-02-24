@@ -4,6 +4,13 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	// @ts-ignore
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+    import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+	onMount(()=>{
+		setTimeout(()=>{
+			goto("/home",{})
+		},1000)
+	})
 </script>
 
 <svelte:head>
