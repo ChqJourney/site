@@ -9,7 +9,7 @@
 
         <div class="">
             <div class="font-medium">{chatName}</div>
-            <div class="text-xs flex items-center gap-1"><span class="indicator-item indicator-center badge badge-xs badge-info"></span>
+            <div class="text-xs flex items-center gap-1"><span class="rounded-full w-2 h-2 bg-green-400"></span>
                 {status}</div>
             </div>
             <button class="btn btn-square btn-ghost">
